@@ -46,6 +46,7 @@ Nous avons choisi de développer une **application web** pour les raisons suivan
 * **JavaScript** – Logique et traitement
 * **SVG** – Rendu vectoriel
 * **d3-delaunay** – Génération du diagramme de Voronoï (bibliothèque D3 existante)
+* **Jest** – Test unitaires
 
 ---
 
