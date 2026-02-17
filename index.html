@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>SAE 6 - Vonoroi</title>
+    <title>SAE 6 - Diagramme de Vonoroï</title>
 </head>
 <body>
-    <h1>SAE 6 - Diagramme de Vonoroï</h1>
+    <h1>SAE 6 - Diagramme de Voronoï</h1>
     <p>Ce projet a été réalisé par :</p>
     <ul>
         <li>Adrian GALINDO</li>
@@ -13,14 +13,20 @@
     </ul>
 
     <label>Vos coordonnées manuellement (x,y) :
-        <p>Exemple : 15.2,5 ; 30,6</p>
-        <input type="text" id="points_manuellement"/>
+        <input type="text" id="coordonnees_manuel" placeholder="15.2,5 ou 30,6"/>
+        <button id="btn_submit_coordonnees_manuel" disabled>Ajouter</button>
     </label>
+
+    <ul id="affichage_coordonnees_manuel"></ul>
+    <p id="message_error_saisie_manuel"></p>
+
     <br>
     <label>Fichier de coordonnées :
         <input type="file" />
     </label>
 
+    <!-- Lien vers les fichiers JS -->
     <script src="./src/modules/lecture.js"></script>
+    <script src="./src/modules/parsing.js"></script>
 </body>
 </html>
