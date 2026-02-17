@@ -1,4 +1,4 @@
-import { setPointIntoCollection } from "./parsing.js";
+import {validationSaisiRegex, setPointIntoCollection} from "./parsing.js";
 
 let input_coordonnees_manuel = document.getElementById("coordonnees_manuel");
 let message_error_manuel = document.getElementById("message_error_saisie_manuel");
@@ -30,14 +30,9 @@ input_coordonnees_manuel.addEventListener("input", function(event) {
         return;
     }
 
-    // Expression régulière pour valider le format 'X, Y' (X et Y peuvent être des nombres avec des décimales)
-    let regex = /^\s*(-?\d+(\.\d+)?),\s*(-?\d+(\.\d+)?)\s*$/;
-    let match = value.match(regex);
+    let match = validationSaisiRegex(value);
 
     if (match) {
-        let pointX = parseFloat(match[1]);
-        let pointY = parseFloat(match[3]);
-
         // Activer le bouton de soumission si les coordonnées sont valides
         button_submit_coordonnees_manuel.disabled = false;
 
@@ -55,9 +50,7 @@ button_submit_coordonnees_manuel.addEventListener("click", function() {
     // On fait a nouveau une validation pour s'assurer que les coordonnées sont correctes avant de les afficher (possible manipulation de l'utilisateur)
     let value = input_coordonnees_manuel.value;
 
-    // Expression régulière pour extraire les coordonnées valides
-    let regex = /^\s*(-?\d+(\.\d+)?),\s*(-?\d+(\.\d+)?)\s*$/;
-    let match = value.match(regex);
+    let match = validationSaisiRegex(value);
 
     if (match) {
         let pointX = parseFloat(match[1]);
