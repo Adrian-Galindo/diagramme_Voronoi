@@ -2,21 +2,21 @@ class Point {
     static id = 0;
 
     constructor(x, y) {
-        this.x = x;
-        this.y = y;
+        this.setX(x);
+        this.setY(y);
         this.id = Point.id++;
     }
 
     setX(x) {
-        if (x < 0 || x >= 0) {
-            throw new Error('X coordinate must be a number');
+        if (x < 0 || typeof x !== "number") {
+            throw new Error('X doit être un nombre entier');
         }
         this.x = x;
     }
 
     setY(y) {
-        if (typeof y !== "number" || isNaN(y)) {
-            throw new Error("Y doit être un nombre");
+        if (y < 0 || typeof y !== "number") {
+            throw new Error('Y doit être un nombre entier');
         }
         this.y = y;
     }
