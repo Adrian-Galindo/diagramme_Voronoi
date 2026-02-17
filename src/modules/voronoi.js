@@ -1,4 +1,4 @@
-// Gère le calcul et l'affichage Voronoi
+// Gère le calcul et l'affichage Voronoi ( pas de biblio externe D3)
 
 class VoronoiDiagram {
     constructor() {
@@ -17,7 +17,6 @@ class VoronoiDiagram {
         const hauteur = zoneDessin.height;
         
         // On récupère le tableau de pixels pour écrire dedans directement
-        // c'est plus rapide que de faire plein de fillRect(1,1)
         const pixels = contexte.createImageData(largeur, hauteur);
         const data = pixels.data;
 
@@ -33,8 +32,7 @@ class VoronoiDiagram {
                     const p = this.donnees[i];
                     
                     // calcul de distance classique (Pythagore)
-                    // astuce vue sur internet : pas besoin de la racine carrée pour comparer
-                    // ça économise du calcul
+                    // astuce vue sur starckoverflow pour le perf du cpu
                     const dx = x - p.x;
                     const dy = y - p.y;
                     const d = (dx * dx) + (dy * dy);
@@ -70,5 +68,4 @@ class VoronoiDiagram {
     }
 }
 
-// compatible avec le code d'Adrian
 module.exports = VoronoiDiagram;
