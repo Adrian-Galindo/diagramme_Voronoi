@@ -6,4 +6,10 @@ const collectionPoints = new PointCollection();
 export function setPointIntoCollection(x, y) {
     let point = new Point(x,y);
     collectionPoints.addPoint(point);
+    console.log(collectionPoints);
+}
+
+export function clearCollection(affichage_coordonnees){
+    collectionPoints.clear();
+    affichage_coordonnees.innerHTML = "";
 }

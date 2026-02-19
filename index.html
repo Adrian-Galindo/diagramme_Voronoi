@@ -16,17 +16,15 @@
         <input type="text" id="coordonnees_manuel" placeholder="15.2,5 ou 30,6"/>
         <button id="btn_submit_coordonnees_manuel" disabled>Ajouter</button>
     </label>
-
-    <ul id="affichage_coordonnees_manuel"></ul>
     <p id="message_error_saisie_manuel"></p>
 
     <br>
     <label>Fichier de coordonnées :
         <input type="file" id="coordonnees_fichier" accept=".txt"/>
     </label>
+    <p id="message_error_fichier"></p>
 
-    <ul id="listePoints"></ul>
-    <p id="messageErreur"></p>
+    <ul id="affichage_coordonnees"></ul>
 
     <!-- Lien vers les fichiers JS -->
     <script type="module" src="./src/modules/lecture.js"></script>
