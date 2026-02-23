@@ -6,34 +6,43 @@
     <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
-    <h1>SAE 6 - Diagramme de Voronoï</h1>
-    <p>Ce projet a été réalisé par :</p>
-    <ul>
-        <li>Adrian GALINDO</li>
-        <li>...</li>
-    </ul>
+    <div id="container">
+        <div id="page_block">
+            <h1>SAE 6 - Diagramme de Voronoï</h1>
+            <p>Ce projet a été réalisé par :</p>
+            <ul>
+                <li>Adrian GALINDO</li>
+                <li>...</li>
+            </ul>
 
-    <label>Vos coordonnées manuellement (x,y) :
-        <input type="text" id="coordonnees_manuel" placeholder="15.2,5 ou 30,6"/>
-        <button id="btn_submit_coordonnees_manuel" disabled>Ajouter</button>
-    </label>
-    <p id="message_error_saisie_manuel"></p>
+            <div class="blocks_saisie">
+                <label class="titre_block">Coordonnées manuelles
+                    <input type="text" id="coordonnees_manuel" placeholder="Ex : 15.2,5 ou 30,6"/>
+                    <button class="btn_classique" id="btn_submit_coordonnees_manuel" disabled>Ajouter</button>
+                </label>
 
-    <br>
-    <label>Fichier de coordonnées :
-        <div id="drop_zone">
-            Cliquez ou glissez votre fichier .txt ici
-            <input type="file" id="file_input" accept=".txt" style="display:none">
+                <label class="titre_block">Imports de fichiers
+                    <div id="drop_zone">
+                        Cliquez ou glissez votre fichier .txt ici
+                        <input type="file" id="file_input" accept=".txt" style="display:none">
+                    </div>
+                </label>
+            </div>
+
+            <p id="message_error_saisie_manuel"></p>
+            <p id="message_error_fichier"></p>
+            <p id="message_export_error"></p>
+
+            <ul id="affichage_coordonnees"></ul>
+
+            <button class="btn_classique" id="btn_export_png">Exporter en PNG</button>
+            <button class="btn_classique" id="btn_reset_points">Réinitialiser points</button>
+
         </div>
-    </label>
-    <p id="message_error_fichier"></p>
-
-    <ul id="affichage_coordonnees"></ul>
-    <p id="message_export_error"></p>
-
-    <canvas id="canvas" width="800" height="600"></canvas>
-    <button id="btn_export_png">Exporter en PNG</button>
-    <button id="btn_reset_points">Réinitialiser points</button>
+        <div id="diagramme_block">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
+    </div>
 
     <!-- Lien vers les fichiers JS -->
     <script type="module" src="./src/modules/lecture.js"></script>
