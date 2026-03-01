@@ -93,7 +93,6 @@
    - deactivate
 
 
-============================================================
-Auteur : Pham Huy
-BUT Informatique – IUT de Villetaneuse
-============================================================
+
+## Auteur : Pham Huy
+## BUT Informatique – IUT de Villetaneuse
