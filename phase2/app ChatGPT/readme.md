@@ -67,10 +67,10 @@
 
 - Contenu :
 
-- 0,0
-- 10,0
-- 5,5
-- 3,8
++ 0,0
++ 10,0
++ 5,5
++ 3,8
 
 - Puis charger ce fichier dans l’application.
 
