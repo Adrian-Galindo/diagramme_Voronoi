@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbce937b-16b6-4d59-bbb6-e39278211a9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phase1/tests/Lecture.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phase1/src/modules/lecture.js" beforeDir="false" afterPath="$PROJECT_DIR$/phase1/src/modules/lecture.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phase1/src/modules/parsing.js" beforeDir="false" afterPath="$PROJECT_DIR$/phase1/src/modules/parsing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phase1/tests/Parsing.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/phase1/tests/Parsing.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phase1/tests/Point.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/phase1/tests/Point.test.js" afterDir="false" />
-    </list>
+    <list default="true" id="bbce937b-16b6-4d59-bbb6-e39278211a9c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
